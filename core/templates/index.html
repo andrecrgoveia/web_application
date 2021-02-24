@@ -1,0 +1,32 @@
+{% extends 'base.html' %} <!--  This template archive extends the template html, all thins inside base.html will be inside index  -->
+{% load static %}
+{% block content %}
+
+    <!-- ========================= hero-5 start ========================= -->
+                {% include 'hero.html' %}
+    <!-- ========================= hero-5 end ========================= -->
+
+    <!-- ========================= feature style-5 start ========================= -->
+                {% include 'features.html' %}
+    <!-- ========================= feature style-5 end ========================= -->
+
+    <!-- ========================= about style-4 start ========================= -->
+                {% include 'about.html' %}
+    <!-- ========================= about style-4 end ========================= -->
+
+    <!-- ========================= pricing style-4 start ========================= -->
+                {% include 'pricing.html' %}
+    <!-- ========================= pricing style-4 end ========================= -->
+
+    <!-- ========================= contact-style-3 start ========================= -->
+                {% include 'contact.html' %}
+    <!-- ========================= contact-style-3 end ========================= -->
+
+    <!-- ========================= clients-logo start ========================= -->
+                {% include 'clients.html' %}
+    <!-- ========================= clients-logo end ========================= -->
+
+    <!-- ========================= footer style-4 start ========================= -->
+                {% include 'footer.html' %}
+    <!-- ========================= footer style-4 end ========================= -->
+    {% endblock %}

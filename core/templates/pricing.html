@@ -1,0 +1,32 @@
+{% load static %}
+<section id="pricing" class="pricing-section pricing-style-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-6">
+          <div class="section-title mb-60">
+            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Preços e Planos</h3>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Pare de perder tempo e dinheiro projetando e gerenciando um site que não dá resultados. Felicidade garantida! Pare de perder tempo e dinheiro projetando e gerenciando um site que não dá resultados. Felicidade garantida!</p>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6">
+          <div class="pricing-active-wrapper wow fadeInUp" data-wow-delay=".4s">
+            <div class="pricing-active">
+              {% for t in title %}
+              <div class="single-pricing-wrapper">
+                <div class="single-pricing">
+                  <h6>{{ t.title }}</h6>
+                  <h4>{{ t.service }}</h4>
+                  <h3>R$ {{ t.price }}</h3>
+                  <ul>
+                    <li>{{ t.description }}</li>
+                  </ul>
+                  <a href="#0" class="button radius-30">Get Started</a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
